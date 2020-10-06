@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About LT</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -12,8 +14,8 @@
 
     <!-- 關於LT標題 -->
     <section id="about-handmade">
-        <div id="handmade"></div>
-        <div id="about-title">
+        <div id="handmade" data-aos="fade-right" data-aos-once="true" data-aos-offet="500" data-aos-duration="1500"></div>
+        <div id="about-title" data-aos="fade-left" data-aos-once="true" data-aos-offet="500" data-aos-duration="1500"> 
             <h1>ABOUT</h1>
             <h1>LT</h1>
             <h1>PATISSERIE</h1>
@@ -24,5 +26,11 @@
     <section id="about-text">
         
     </section>
+
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -5,14 +5,14 @@
 }
 
 // 橫幅
-#about-banner{
+#about-banner {
     background-image: url(./img/about-banner2.jpg);
-    height:300px;
+    height: 300px;
     width: 100%;
     background-size: cover;
-    background-position-y:700px;
-    h1{
-        color:white;
+    background-position-y: 500px;
+    h1 {
+        color: white;
         text-align: center;
         padding-top: 130px;
         letter-spacing: 5px;
@@ -20,57 +20,130 @@
     }
 }
 
-#about-handmade{
+#about-handmade {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
 
-
-    #handmade{
-        background-image: url(./img/interior.jpg);
+    #handmade {
+        background-image: url(./img/interior-2.jpg);
         background-size: cover;
         margin: 50px 120px;
         height: 500px;
         background-position: center;
     }
 
-    #about-title{
-        padding-top: 200px;
+    #about-title {
+        padding-top: 150px;
         font-size: 18pt;
-        color:#272727;
-        p{
+        color: #272727;
+        p {
             font-size: 12pt;
-            padding-right:250px;
+            padding-right: 250px;
         }
-    
     }
 }
+
+
+
+
+
+
 
 #box {
-    background-image: url(./img/box.jpg);
+    background-image: url(./img/about-bn.jpg);
     background-size: cover;
-    height: 300px;
-    // background-attachment: fixed;
-    // background-position-y: 10px;
-    // margin-top: 10px;
+    height: 500px;
+    background-position-y: -450px;
+    padding: 60px 150px;
+    // filter: opacity(100%);
+    // transition: 0.5s;
 
-    h2{
-        text-align: center;
-        padding: 100px 0;
-        font-weight: 500;
-        letter-spacing: 8px;
-        color:#4F4F4F;
-        font-size: 16pt;
+    // &:hover{
+    //         filter: opacity(70%);
+        
+    // }
+
+    img{
+        width: 100%;
+        opacity: 0.7;
+        // padding: 70px 120px;
+        
     }
-
 }
 
-// #about-text {
-//     background-image: url(./img/2.jpg);
-//     height: 100vh;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position-x: -70px;
-    
-// }
+#about-text {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    #info {
+        padding: 120px 150px;
+        h1 {
+            font-size: 24pt;
+        }
+    }
+
+    #map {
+        padding: 50px;
+    }
+}
+
+/* 頁尾 */
+footer {
+    // margin: 0;
+    padding: 20px 0 5px;
+    // background-color: #024679;
+    background-color: #fbf7f0;
+    // margin-top: 50px;
+    text-align: center;
+}
+
+.footer-logo {
+    // border: 1px solid #000;
+    width: 300px;
+    height: 70px;
+    display: inline-block;
+    background-image: url(./img/LTlogo-full.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.footer-logo:hover {
+    opacity: 0.4;
+}
+
+.footer-block h4 {
+    color: #024679;
+    line-height: 25px;
+    font-weight: 300;
+    font-size: 14px;
+}
+.icon img {
+    width: 32px;
+    display: inline-block;
+    padding-top: 25px;
+}
+.icon a {
+    display: inline-block;
+    padding: 0 10px 0;
+    filter: opacity(100%);
+    transition: 0.5s;
+    &:hover {
+        opacity: 0.4;
+    }
+}
+footer hr {
+    width: 100%;
+    margin: 20px auto -10px;
+    opacity: 0.3;
+}
+
+footer p {
+    color: #024679;
+    font-size: 14px;
+    margin-top: 20px;
+}

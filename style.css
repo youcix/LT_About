@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,7 @@
   height: 300px;
   width: 100%;
   background-size: cover;
-  background-position-y: 700px;
+  background-position-y: 500px;
 }
 
 #about-banner h1 {
@@ -30,7 +31,7 @@
 }
 
 #about-handmade #handmade {
-  background-image: url(./img/interior.jpg);
+  background-image: url(./img/interior-2.jpg);
   background-size: cover;
   margin: 50px 120px;
   height: 500px;
@@ -38,7 +39,7 @@
 }
 
 #about-handmade #about-title {
-  padding-top: 200px;
+  padding-top: 150px;
   font-size: 18pt;
   color: #272727;
 }
@@ -49,17 +50,98 @@
 }
 
 #box {
-  background-image: url(./img/box.jpg);
+  background-image: url(./img/about-bn.jpg);
   background-size: cover;
-  height: 300px;
+  height: 500px;
+  background-position-y: -450px;
+  padding: 60px 150px;
 }
 
-#box h2 {
+#box img {
+  width: 100%;
+  opacity: 0.7;
+}
+
+#about-text {
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#about-text #info {
+  padding: 120px 150px;
+}
+
+#about-text #info h1 {
+  font-size: 24pt;
+}
+
+#about-text #map {
+  padding: 50px;
+}
+
+/* 頁尾 */
+footer {
+  padding: 20px 0 5px;
+  background-color: #fbf7f0;
   text-align: center;
-  padding: 100px 0;
-  font-weight: 500;
-  letter-spacing: 8px;
-  color: #4F4F4F;
-  font-size: 16pt;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 70px;
+  display: inline-block;
+  background-image: url(./img/LTlogo-full.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.footer-logo:hover {
+  opacity: 0.4;
+}
+
+.footer-block h4 {
+  color: #024679;
+  line-height: 25px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.icon img {
+  width: 32px;
+  display: inline-block;
+  padding-top: 25px;
+}
+
+.icon a {
+  display: inline-block;
+  padding: 0 10px 0;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.icon a:hover {
+  opacity: 0.4;
+}
+
+footer hr {
+  width: 100%;
+  margin: 20px auto -10px;
+  opacity: 0.3;
+}
+
+footer p {
+  color: #024679;
+  font-size: 14px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,6 +22,24 @@
   font-weight: 500;
 }
 
+.title {
+  text-align: center;
+  position: relative;
+}
+
+.title img {
+  width: 60px;
+  height: 40px;
+  margin: 30px 10px 0;
+}
+
+.title h1 {
+  display: inline-block;
+  vertical-align: 40%;
+  color: #004884;
+  font-weight: 300;
+}
+
 #about-handmade {
   height: 600px;
   display: -ms-grid;

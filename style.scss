@@ -19,13 +19,14 @@ $mobile: 767px;
     background-position-y: -40px;
     
     @media screen and (max-width: $table) {
-       
-
+        background-size: contain;
+        background-position-y: 0px;
+        height: 200px;
         
         }
     @media screen and (max-width: $mobile) {
-            
-            
+        background-size: contain;   
+        height: 100px;
         }
 }
 
@@ -36,13 +37,22 @@ $mobile: 767px;
       width: 60px;
       height: 40px;
       margin: 30px 10px 0;
+      @media screen and (max-width: $mobile) {
+        width: 30px;
+        height: 20px;
+        margin: 30px 10px 0;
+    }
     }
     h1 {
       display: inline-block;
       vertical-align: 40%;
       color: #004884;
       font-weight: 300;
+      @media screen and (max-width: $mobile) {
+        font-size: 18px;
     }
+    }
+   
   }
 
 #about-handmade {
@@ -50,18 +60,34 @@ $mobile: 767px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @media screen and (max-width: $table) {
+        grid-template-columns: repeat(1, 1fr);
+        
+        }
+     @media screen and (max-width: $mobile) {
+        grid-template-columns: repeat(1, 1fr);
+        } 
     #handmade {
         background-image: url(./img/interior-2.jpg);
         background-size: cover;
         margin: 50px 120px;
         height: 500px;
         background-position: center;
+        border-radius: 15px;
+        @media screen and (max-width: $table) {
+            margin: 50px 100px;
+            
+            }
     }
 
     #about-title {
         padding-top: 150px;
         font-size: 18pt;
         color: #004884;
+        @media screen and (max-width: $table) {
+            padding: 120px 50px;
+            
+            }
         p {
             font-size: 12pt;
             padding-right: 250px;
@@ -70,14 +96,98 @@ $mobile: 767px;
     }
 }
 
+#box {
+   background-image: url(./img/box2.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+    background-position-y: -50px;
+   height: 400px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   transition:0.5s;
+   &:hover{
+       .online-shop {
+        backdrop-filter:opacity(40%)brightness(30%) ;
+        //    -webkit-filter:brightness(0.4)
+       }
+   }
+    
 
+   
+   
+  
+   
+   .online-shop{
+        // backdrop-filter:opacity(40%)brightness(30%);
+        
+        color:white;
+        margin-top: 100px;
+       
+        h2{
+        text-align: center;
+        padding: 10px;
+        
+        }
+        p{
+            text-align: center;
+            padding: 5px;
+            padding-bottom: 25px;
+            
+        }
+        img{
+            filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+            width: 60px;
+            margin-left:390px;
+            
+        }
+        .box-shop{
+            text-decoration: none;
+            color:white;
+            border:1px solid white;
+            border-radius: 20px;
+            padding: 8px 15px;
+            margin-left: 370px;
+            margin-top: 50px;
+            transition: 0.3s;
+            &:hover {
+                background: #ffffff;
+                color:#004884;
+              }
+        }
+    }
+    .message{
+        color:white;
+        margin-top: 100px;
+        img{
+            filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+            width: 50px;
+            margin-left:400px;
+        }
+        h2{
+            text-align: center;
+            padding: 10px;
+        }
+         p{
+            text-align: center;
+            padding: 5px 150px;
+            
+        }
+}
 
-
+}
 
 #about-text {
     height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: $table) {
+        grid-template-columns: repeat(1, 1fr);
+        
+        }
+     @media screen and (max-width: $mobile) {
+        grid-template-columns: repeat(1, 1fr);
+        } 
 
     #info {
         padding: 120px 150px;
@@ -92,6 +202,7 @@ $mobile: 767px;
 
     #map {
         padding: 50px;
+        border-radius: 15px;
     }
 }
 

@@ -15,6 +15,21 @@
   background-position-y: -40px;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-banner {
+    background-size: contain;
+    background-position-y: 0px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-banner {
+    background-size: contain;
+    height: 100px;
+  }
+}
+
 .title {
   text-align: center;
   position: relative;
@@ -26,11 +41,25 @@
   margin: 30px 10px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .title img {
+    width: 30px;
+    height: 20px;
+    margin: 30px 10px 0;
+  }
+}
+
 .title h1 {
   display: inline-block;
   vertical-align: 40%;
   color: #004884;
   font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .title h1 {
+    font-size: 18px;
+  }
 }
 
 #about-handmade {
@@ -41,12 +70,33 @@
       grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-handmade {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-handmade {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 #about-handmade #handmade {
   background-image: url(./img/interior-2.jpg);
   background-size: cover;
   margin: 50px 120px;
   height: 500px;
   background-position: center;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-handmade #handmade {
+    margin: 50px 100px;
+  }
 }
 
 #about-handmade #about-title {
@@ -55,10 +105,97 @@
   color: #004884;
 }
 
+@media screen and (max-width: 1024px) {
+  #about-handmade #about-title {
+    padding: 120px 50px;
+  }
+}
+
 #about-handmade #about-title p {
   font-size: 12pt;
   padding-right: 250px;
   color: #556f87;
+}
+
+#box {
+  background-image: url(./img/box2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -50px;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#box:hover .online-shop {
+  -webkit-backdrop-filter: opacity(40%) brightness(30%);
+          backdrop-filter: opacity(40%) brightness(30%);
+}
+
+#box .online-shop {
+  color: white;
+  margin-top: 100px;
+}
+
+#box .online-shop h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+#box .online-shop p {
+  text-align: center;
+  padding: 5px;
+  padding-bottom: 25px;
+}
+
+#box .online-shop img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+          filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+  width: 60px;
+  margin-left: 390px;
+}
+
+#box .online-shop .box-shop {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-left: 370px;
+  margin-top: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#box .online-shop .box-shop:hover {
+  background: #ffffff;
+  color: #004884;
+}
+
+#box .message {
+  color: white;
+  margin-top: 100px;
+}
+
+#box .message img {
+  -webkit-filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+          filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+  width: 50px;
+  margin-left: 400px;
+}
+
+#box .message h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+#box .message p {
+  text-align: center;
+  padding: 5px 150px;
 }
 
 #about-text {
@@ -67,6 +204,20 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1024px) {
+  #about-text {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-text {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 #about-text #info {
@@ -84,6 +235,7 @@
 
 #about-text #map {
   padding: 50px;
+  border-radius: 15px;
 }
 
 /* 頁尾 */

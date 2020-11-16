@@ -1,3 +1,8 @@
+// RWD：桌上、平板、手機
+$desktop: 1025px;
+$table: 1024px;
+$mobile: 767px;
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +14,19 @@
     background-image: url(./img/BN.jpg);
     height: 300px;
     width: 100%;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -40px;
-    h1 {
-        color: white;
-        text-align: center;
-        padding-top: 130px;
-        letter-spacing: 5px;
-        font-weight: 500;
-    }
+    
+    @media screen and (max-width: $table) {
+       
+
+        
+        }
+    @media screen and (max-width: $mobile) {
+            
+            
+        }
 }
 
 .title {
@@ -143,4 +152,5 @@ footer p {
     color: #024679;
     font-size: 14px;
     margin-top: 20px;
-}
+ }
+

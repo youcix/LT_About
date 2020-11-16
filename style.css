@@ -10,16 +10,9 @@
   background-image: url(./img/BN.jpg);
   height: 300px;
   width: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -40px;
-}
-
-#about-banner h1 {
-  color: white;
-  text-align: center;
-  padding-top: 130px;
-  letter-spacing: 5px;
-  font-weight: 500;
 }
 
 .title {

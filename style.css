@@ -233,8 +233,9 @@
   color: #556f87;
 }
 
-#about-text #map {
-  padding: 50px;
+#about-text #map img {
+  width: 500px;
+  margin-top: 100px;
   border-radius: 15px;
 }
 

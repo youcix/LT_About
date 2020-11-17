@@ -9,6 +9,127 @@ $mobile: 767px;
     box-sizing: border-box;
 }
 
+// Navbar Start
+#navbar {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    padding: 5px 5vw;
+    z-index: 2;
+    transition: 0.4s ease-out;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.1);
+    .link {
+      float: left;
+      padding-top: 22px;
+      position: absolute;
+      top: 0;
+      left: calc(25% - 90px);
+      transform: translatex(-50%);
+    }
+    .link ul {
+      display: flex;
+      list-style: none;
+      li {
+        overflow: hidden;
+        .en,
+        .ch {
+          position: relative;
+          transition: opacity 0.3s;
+        }
+        .en {
+          display: flex;
+          justify-content: center;
+          letter-spacing: 5px;
+          font-weight: 300;
+        }
+        .ch {
+          position: absolute;
+          top: 22px;
+          opacity: 0;
+          display: flex;
+          justify-content: center;
+          letter-spacing: 5px;
+          font-weight: 600;
+        }
+        a {
+          font-size: 14px;
+          text-decoration: none;
+          display: inline-block;
+          padding: 0 15px;
+          color: #004884;
+          &:hover .en {
+            opacity: 0;
+          }
+          &:hover .ch {
+            opacity: 1;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  
+    .brand a {
+      width: 75px;
+      height: 75px;
+      display: inline-block;
+      background-image: url(./img/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 54%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  
+    .icon {
+      float: right;
+      padding-right: 70px;
+      position: absolute;
+      right: 0;
+      top: 54%;
+      transform: translateY(-50%);
+      img{
+        width: 20px;
+      }
+      a {
+        display: inline-block;
+        padding: 0 10px 0;
+        filter: opacity(100%);
+        transition: 0.5s;
+        &:hover {
+          opacity: 0.4;
+        }
+      }
+    }
+    .order {
+      float: right;
+      position: absolute;
+      right: 11%;
+      top: 54%;
+      transform: translateY(-50%);
+      a {
+        padding: 0 10px;
+        img {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          filter: invert(55%) sepia(9%) saturate(1966%) hue-rotate(177deg) brightness(95%) contrast(81%);
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  // navbar End
+
+
 // 橫幅
 #about-banner {
     background-image: url(./img/BN.jpg);

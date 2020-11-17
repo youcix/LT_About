@@ -6,6 +6,163 @@
           box-sizing: border-box;
 }
 
+#navbar {
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  padding: 5px 5vw;
+  z-index: 2;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+#navbar .link {
+  float: left;
+  padding-top: 22px;
+  position: absolute;
+  top: 0;
+  left: calc(25% - 90px);
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+}
+
+#navbar .link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#navbar .link ul li {
+  overflow: hidden;
+}
+
+#navbar .link ul li .en,
+#navbar .link ul li .ch {
+  position: relative;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+#navbar .link ul li .en {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+#navbar .link ul li .ch {
+  position: absolute;
+  top: 22px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+#navbar .link ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 15px;
+  color: #004884;
+}
+
+#navbar .link ul li a:hover .en {
+  opacity: 0;
+}
+
+#navbar .link ul li a:hover .ch {
+  opacity: 1;
+  z-index: 2;
+}
+
+#navbar .brand a {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  background-image: url(./img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#navbar .brand a:hover {
+  opacity: 0.75;
+}
+
+#navbar .icon {
+  float: right;
+  padding-right: 70px;
+  position: absolute;
+  right: 0;
+  top: 54%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#navbar .icon img {
+  width: 20px;
+}
+
+#navbar .icon a {
+  display: inline-block;
+  padding: 0 10px 0;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar .icon a:hover {
+  opacity: 0.4;
+}
+
+#navbar .order {
+  float: right;
+  position: absolute;
+  right: 11%;
+  top: 54%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#navbar .order a {
+  padding: 0 10px;
+}
+
+#navbar .order a img {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-filter: invert(55%) sepia(9%) saturate(1966%) hue-rotate(177deg) brightness(95%) contrast(81%);
+          filter: invert(55%) sepia(9%) saturate(1966%) hue-rotate(177deg) brightness(95%) contrast(81%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#navbar .order a img:hover {
+  opacity: 0.5;
+}
+
 #about-banner {
   background-image: url(./img/BN.jpg);
   height: 300px;

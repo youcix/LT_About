@@ -217,6 +217,10 @@ $mobile: 767px;
 
 #big-box {
   position: relative;
+  
+  &:hover #box{
+    -webkit-filter: brightness(0.4);
+  }
 
   #content-box {
     display: grid;
@@ -224,7 +228,7 @@ $mobile: 767px;
     position: absolute;
     top:0;
     z-index: 1;
-    pointer-events: none;
+    // pointer-events: none;
 
     .online-shop {
       color: white;
@@ -289,11 +293,12 @@ $mobile: 767px;
   background-size: cover;
   background-position-y: -50px;
   height: 400px;
-
   transition: 0.5s;
-  &:hover {
-    -webkit-filter: brightness(0.4);
-  }
+
+  // transition: 0.5s;
+  // &:hover {
+  //   -webkit-filter: brightness(0.4);
+  // }
 }
 
 #about-text {

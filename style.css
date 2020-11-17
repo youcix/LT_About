@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+#wrapper {
+  overflow: hidden;
+}
+
 #navbar {
   position: fixed;
   width: 100vw;
@@ -115,8 +119,8 @@
   position: absolute;
   right: 0;
   top: 54%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-75%);
+          transform: translateY(-75%);
 }
 
 #navbar .icon img {
@@ -170,6 +174,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -40px;
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -223,21 +228,21 @@
   height: 600px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 @media screen and (max-width: 1024px) {
   #about-handmade {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
   }
 }
 
 @media screen and (max-width: 767px) {
   #about-handmade {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
   }
 }
 
@@ -262,61 +267,51 @@
   color: #004884;
 }
 
-@media screen and (max-width: 1024px) {
-  #about-handmade #about-title {
-    padding: 120px 50px;
-  }
-}
-
 #about-handmade #about-title p {
   font-size: 12pt;
   padding-right: 250px;
   color: #556f87;
 }
 
-#box {
-  background-image: url(./img/box2.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-y: -50px;
-  height: 400px;
+#big-box {
+  position: relative;
+}
+
+#big-box #content-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
-#box:hover .online-shop {
-  -webkit-backdrop-filter: opacity(40%) brightness(30%);
-          backdrop-filter: opacity(40%) brightness(30%);
-}
-
-#box .online-shop {
+#big-box #content-box .online-shop {
   color: white;
   margin-top: 100px;
 }
 
-#box .online-shop h2 {
+#big-box #content-box .online-shop h2 {
   text-align: center;
   padding: 10px;
 }
 
-#box .online-shop p {
+#big-box #content-box .online-shop p {
   text-align: center;
   padding: 5px;
   padding-bottom: 25px;
 }
 
-#box .online-shop img {
+#big-box #content-box .online-shop img {
   -webkit-filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
           filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
   width: 60px;
   margin-left: 390px;
 }
 
-#box .online-shop .box-shop {
+#big-box #content-box .box-shop {
   text-decoration: none;
   color: white;
   border: 1px solid white;
@@ -328,31 +323,45 @@
   transition: 0.3s;
 }
 
-#box .online-shop .box-shop:hover {
+#big-box #content-box .box-shop:hover {
   background: #ffffff;
   color: #004884;
 }
 
-#box .message {
+#big-box .message {
   color: white;
   margin-top: 100px;
 }
 
-#box .message img {
+#big-box .message img {
   -webkit-filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
           filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
   width: 50px;
   margin-left: 400px;
 }
 
-#box .message h2 {
+#big-box .message h2 {
   text-align: center;
   padding: 10px;
 }
 
-#box .message p {
+#big-box .message p {
   text-align: center;
   padding: 5px 150px;
+}
+
+#box {
+  background-image: url(./img/box2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -50px;
+  height: 400px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#box:hover {
+  -webkit-filter: brightness(0.4);
 }
 
 #about-text {

@@ -182,36 +182,58 @@ $mobile: 767px;
   }
 }
 
-#about-handmade {
-  height: 600px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+#about-containter {
+  display:flex;
+  // height: 600px;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
 
   @media screen and (max-width: $tablet) {
-    grid-template-columns: repeat(1, 2fr);
+    display: inline;
   }
   @media screen and (max-width: $mobile) {
-    grid-template-columns: repeat(1, 2fr);
+    display: inline;
   }
-  #handmade {
-    background-image: url(./img/interior-2.jpg);
-    background-size: cover;
+  #about-pic {
+    // background-image: url(./img/interior-2.jpg);
+    // background-size: cover;
+    img{
     margin: 50px 120px;
     height: 500px;
-    background-position: center;
+    // background-position: center;
     border-radius: 15px;
-    
+    @media screen and (max-width: $tablet) {
+      margin:0 50px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin:20px auto;
+      width: 100%;
+      height: 300px;
+    }
+    }
   }
 
-  #about-title {
+  #about-text {
+
+    @media screen and (max-width: $tablet) {
+      margin:50px 100px;
+    }
+
+    h1{
     padding-top: 150px;
-    font-size: 18pt;
+    font-size: 26pt;
     color: #004884;
-   
+    @media screen and (max-width: $tablet) {
+      padding-top:0px;
+      }
+     }
     p {
       font-size: 12pt;
       padding-right: 250px;
       color: #556f87;
+      @media screen and (max-width: $tablet) {
+        padding-right: 0px;
+        }
     }
   }
 }
@@ -298,7 +320,7 @@ $mobile: 767px;
 
 }
 
-#about-text {
+#info-containter {
   height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;

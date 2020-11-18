@@ -1,6 +1,6 @@
 // RWD：桌上、平板、手機
 $desktop: 1025px;
-$table: 1024px;
+$tablet: 1024px;
 $mobile: 767px;
 
 * {
@@ -140,13 +140,13 @@ $mobile: 767px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -40px;
+  background-position-y: -60px;
   margin-top: 70px;
 
-  @media screen and (max-width: $table) {
+  @media screen and (max-width: $tablet) {
     background-size: contain;
     background-position-y: 0px;
-    height: 200px;
+    height: 300px;
   }
   @media screen and (max-width: $mobile) {
     background-size: contain;
@@ -161,20 +161,20 @@ $mobile: 767px;
     width: 60px;
     height: 40px;
     margin: 30px 10px 0;
-    @media screen and (max-width: $mobile) {
-      width: 30px;
-      height: 20px;
-      margin: 30px 10px 0;
-    }
+    // @media screen and (max-width: $mobile) {
+    //   width: 30px;
+    //   height: 20px;
+    //   margin: 30px 10px 0;
+    // }
   }
   h1 {
     display: inline-block;
     vertical-align: 40%;
     color: #004884;
     font-weight: 300;
-    @media screen and (max-width: $mobile) {
-      font-size: 18px;
-    }
+    // @media screen and (max-width: $mobile) {
+    //   font-size: 18px;
+    // }
   }
 }
 
@@ -183,12 +183,12 @@ $mobile: 767px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media screen and (max-width: $table) {
-    grid-template-columns: repeat(1, 2fr);
-  }
-  @media screen and (max-width: $mobile) {
-    grid-template-columns: repeat(1, 2fr);
-  }
+  // @media screen and (max-width: $table) {
+  //   grid-template-columns: repeat(1, 2fr);
+  // }
+  // @media screen and (max-width: $mobile) {
+  //   grid-template-columns: repeat(1, 2fr);
+  // }
   #handmade {
     background-image: url(./img/interior-2.jpg);
     background-size: cover;
@@ -196,17 +196,14 @@ $mobile: 767px;
     height: 500px;
     background-position: center;
     border-radius: 15px;
-    @media screen and (max-width: $table) {
-      margin: 50px 100px;
-    }
+    
   }
 
   #about-title {
     padding-top: 150px;
     font-size: 18pt;
     color: #004884;
-    @media screen and (max-width: $table) {
-    }
+   
     p {
       font-size: 12pt;
       padding-right: 250px;
@@ -219,7 +216,7 @@ $mobile: 767px;
   position: relative;
   
   &:hover #box{
-    -webkit-filter: brightness(0.4);
+  -webkit-filter: brightness(0.4);
   }
 
   #content-box {
@@ -295,23 +292,12 @@ $mobile: 767px;
   height: 400px;
   transition: 0.5s;
 
-  // transition: 0.5s;
-  // &:hover {
-  //   -webkit-filter: brightness(0.4);
-  // }
 }
 
 #about-text {
   height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  @media screen and (max-width: $table) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  @media screen and (max-width: $mobile) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   #info {
     padding: 120px 150px;

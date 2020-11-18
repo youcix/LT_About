@@ -173,7 +173,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -40px;
+  background-position-y: -60px;
   margin-top: 70px;
 }
 
@@ -181,7 +181,7 @@
   #about-banner {
     background-size: contain;
     background-position-y: 0px;
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -203,25 +203,11 @@
   margin: 30px 10px 0;
 }
 
-@media screen and (max-width: 767px) {
-  .title img {
-    width: 30px;
-    height: 20px;
-    margin: 30px 10px 0;
-  }
-}
-
 .title h1 {
   display: inline-block;
   vertical-align: 40%;
   color: #004884;
   font-weight: 300;
-}
-
-@media screen and (max-width: 767px) {
-  .title h1 {
-    font-size: 18px;
-  }
 }
 
 #about-handmade {
@@ -232,20 +218,6 @@
       grid-template-columns: repeat(2, 1fr);
 }
 
-@media screen and (max-width: 1024px) {
-  #about-handmade {
-    -ms-grid-columns: (2fr)[1];
-        grid-template-columns: repeat(1, 2fr);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #about-handmade {
-    -ms-grid-columns: (2fr)[1];
-        grid-template-columns: repeat(1, 2fr);
-  }
-}
-
 #about-handmade #handmade {
   background-image: url(./img/interior-2.jpg);
   background-size: cover;
@@ -253,12 +225,6 @@
   height: 500px;
   background-position: center;
   border-radius: 15px;
-}
-
-@media screen and (max-width: 1024px) {
-  #about-handmade #handmade {
-    margin: 50px 100px;
-  }
 }
 
 #about-handmade #about-title {
@@ -369,20 +335,6 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 1024px) {
-  #about-text {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #about-text {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 #about-text #info {

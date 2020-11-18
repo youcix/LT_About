@@ -135,22 +135,26 @@ $mobile: 767px;
 
 // 橫幅
 #about-banner {
-  background-image: url(./img/BN.jpg);
+  // background-image: url(./img/BN.jpg);
+  img{
   height: 300px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -60px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position-y: -60px;
+  object-fit:cover;
   margin-top: 70px;
+  }
 
   @media screen and (max-width: $tablet) {
+    // display: flex;
     background-size: contain;
     background-position-y: 0px;
-    height: 300px;
+    // height: 300px;
   }
   @media screen and (max-width: $mobile) {
-    background-size: contain;
-    height: 100px;
+    // background-size: contain;
+    // height: 100px;
   }
 }
 
@@ -161,20 +165,20 @@ $mobile: 767px;
     width: 60px;
     height: 40px;
     margin: 30px 10px 0;
-    // @media screen and (max-width: $mobile) {
-    //   width: 30px;
-    //   height: 20px;
-    //   margin: 30px 10px 0;
-    // }
+    @media screen and (max-width: $mobile) {
+      width: 30px;
+      height: 20px;
+      margin: 30px 10px 0;
+    }
   }
   h1 {
     display: inline-block;
     vertical-align: 40%;
     color: #004884;
     font-weight: 300;
-    // @media screen and (max-width: $mobile) {
-    //   font-size: 18px;
-    // }
+    @media screen and (max-width: $mobile) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -183,12 +187,12 @@ $mobile: 767px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  // @media screen and (max-width: $table) {
-  //   grid-template-columns: repeat(1, 2fr);
-  // }
-  // @media screen and (max-width: $mobile) {
-  //   grid-template-columns: repeat(1, 2fr);
-  // }
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: repeat(1, 2fr);
+  }
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: repeat(1, 2fr);
+  }
   #handmade {
     background-image: url(./img/interior-2.jpg);
     background-size: cover;
@@ -212,7 +216,7 @@ $mobile: 767px;
   }
 }
 
-#big-box {
+#container {
   position: relative;
   
   &:hover #box{

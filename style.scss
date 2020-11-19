@@ -336,7 +336,7 @@ $mobile: 767px;
 
   #about-text {
     @media screen and (min-width: $desktop) {
-      margin: 0px 10px;
+      margin: 0px 0px;
     }
     @media screen and (max-width: $tablet) {
       margin: 50px 100px;

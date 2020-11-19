@@ -207,10 +207,57 @@
   margin-top: 70px;
 }
 
+@media screen and (min-width: 1025px) {
+  #about-banner #about-desktop {
+    display: inline;
+  }
+}
+
 @media screen and (max-width: 1024px) {
-  #about-banner {
-    background-size: contain;
-    background-position-y: 0px;
+  #about-banner #about-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-banner #about-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #about-banner #about-ipad {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about-banner #about-ipad {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-banner #about-ipad {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  #about-banner #about-phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about-banner #about-phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about-banner #about-phone {
+    display: inline;
   }
 }
 

@@ -33,6 +33,13 @@
           transform: translatex(-50%);
 }
 
+@media screen and (max-width: 1024px) {
+  #navbar .link {
+    -webkit-transform: translatex(-30%);
+            transform: translatex(-30%);
+  }
+}
+
 #navbar .link ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,6 +58,13 @@
   transition: opacity 0.3s;
 }
 
+@media screen and (max-width: 1024px) {
+  #navbar .link ul li .en,
+  #navbar .link ul li .ch {
+    font-size: 5pt;
+  }
+}
+
 #navbar .link ul li .en {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +74,12 @@
           justify-content: center;
   letter-spacing: 5px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar .link ul li .en {
+    letter-spacing: 2px;
+  }
 }
 
 #navbar .link ul li .ch {
@@ -74,6 +94,12 @@
           justify-content: center;
   letter-spacing: 5px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar .link ul li .ch {
+    letter-spacing: 2px;
+  }
 }
 
 #navbar .link ul li a {
@@ -147,6 +173,12 @@
   top: 54%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+  #navbar .order {
+    right: 22%;
+  }
 }
 
 #navbar .order a {
@@ -318,27 +350,32 @@
 }
 
 #container #content-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 0;
   z-index: 1;
 }
 
+@media screen and (max-width: 767px) {
+  #container #content-box {
+    display: inline;
+  }
+}
+
 #container #content-box .online-shop {
   color: white;
   margin-top: 100px;
+  width: 100%;
+  text-align: center;
 }
 
 #container #content-box .online-shop h2 {
-  text-align: center;
   padding: 10px;
 }
 
 #container #content-box .online-shop p {
-  text-align: center;
   padding: 5px;
   padding-bottom: 25px;
 }
@@ -347,7 +384,6 @@
   -webkit-filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
           filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
   width: 60px;
-  margin-left: 390px;
 }
 
 #container #content-box .box-shop {
@@ -356,8 +392,7 @@
   border: 1px solid white;
   border-radius: 20px;
   padding: 8px 15px;
-  margin-left: 370px;
-  margin-top: 50px;
+  margin-top: 70px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -370,13 +405,14 @@
 #container .message {
   color: white;
   margin-top: 100px;
+  width: 100%;
+  text-align: center;
 }
 
 #container .message img {
   -webkit-filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
           filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
   width: 50px;
-  margin-left: 400px;
 }
 
 #container .message h2 {
@@ -389,6 +425,20 @@
   padding: 5px 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #container .message p {
+    padding: 5px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #container .message p {
+    padding: 5px 30px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
 #box {
   background-image: url(./img/box2.jpg);
   background-attachment: fixed;
@@ -399,11 +449,24 @@
   transition: 0.5s;
 }
 
+@media screen and (max-width: 767px) {
+  #box {
+    height: 700px;
+    background-position-y: 0px;
+    background-position: center;
+  }
+}
+
 #info-containter {
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  #info-containter {
+    display: inline;
+  }
 }
 
 #info-containter #info {
@@ -411,19 +474,59 @@
   padding: 120px 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #info-containter #info {
+    margin: 0px 50px;
+    padding: 50px 150px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #info-containter #info {
+    padding: 50px 50px;
+    margin: auto;
+  }
+}
+
 #info-containter #info h1 {
   font-size: 24pt;
   color: #004884;
+}
+
+@media screen and (max-width: 1024px) {
+  #info-containter #info h1 {
+    font-size: 30pt;
+  }
 }
 
 #info-containter #info p {
   color: #556f87;
 }
 
+@media screen and (max-width: 1024px) {
+  #info-containter #info p {
+    font-size: 14pt;
+  }
+}
+
 #info-containter #map img {
   width: 500px;
   margin: 100px 130px;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  #info-containter #map img {
+    margin: 50px 90px;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #info-containter #map img {
+    width: 100%;
+    margin: 50px auto;
+  }
 }
 
 /* 頁尾 */

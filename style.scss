@@ -30,6 +30,9 @@ $mobile: 767px;
     top: 0;
     left: calc(25% - 90px);
     transform: translatex(-50%);
+    @media screen and (max-width: $tablet) {
+      transform: translatex(-30%);
+    }
   }
   .link ul {
     display: flex;
@@ -40,13 +43,19 @@ $mobile: 767px;
       .ch {
         position: relative;
         transition: opacity 0.3s;
+        @media screen and (max-width: $tablet) {
+          font-size: 5pt;
+        }
       }
       .en {
         display: flex;
         justify-content: center;
         letter-spacing: 5px;
         font-weight: 300;
+        @media screen and (max-width: $tablet) {
+          letter-spacing: 2px;
       }
+    }
       .ch {
         position: absolute;
         top: 22px;
@@ -55,6 +64,9 @@ $mobile: 767px;
         justify-content: center;
         letter-spacing: 5px;
         font-weight: 600;
+        @media screen and (max-width: $tablet) {
+          letter-spacing: 2px;
+      }
       }
       a {
         font-size: 14px;
@@ -116,8 +128,12 @@ $mobile: 767px;
     right: 11%;
     top: 54%;
     transform: translateY(-50%);
+    @media screen and (max-width: $tablet) {
+      right: 22%;
+    }
     a {
       padding: 0 10px;
+    
       img {
         display: inline-block;
         width: 22px;
@@ -199,6 +215,8 @@ $mobile: 767px;
     // background-image: url(./img/interior-2.jpg);
     // background-size: cover;
     img{
+    // padding: 50px 120px;
+    // object-fit: cover;
     margin: 50px 120px;
     height: 500px;
     // background-position: center;
@@ -259,31 +277,41 @@ $mobile: 767px;
   }
 
   #content-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display:flex;
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
     position: absolute;
     top:0;
     z-index: 1;
     // pointer-events: none;
+    @media screen and (max-width: $tablet) {
+      
+    }
+    @media screen and (max-width: $mobile) { 
+      display:inline;
+      }
 
     .online-shop {
       color: white;
       margin-top: 100px;
-      
+      width: 100%;
+      text-align: center;
+    
 
       h2 {
-        text-align: center;
+        // text-align: center;
         padding: 10px;
       }
       p {
-        text-align: center;
+        // text-align: center;
         padding: 5px;
         padding-bottom: 25px;
+        
       }
       img {
         filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
         width: 60px;
-        margin-left: 390px;
+        // margin-left: 390px;
         
         }
       }
@@ -293,8 +321,8 @@ $mobile: 767px;
         border: 1px solid white;
         border-radius: 20px;
         padding: 8px 15px;
-        margin-left: 370px;
-        margin-top: 50px;
+        // margin-left:370px;
+        margin-top: 70px;
         transition: 0.3s;
         &:hover {
           background: #ffffff;
@@ -306,11 +334,13 @@ $mobile: 767px;
     .message {
       color: white;
       margin-top: 100px;
+      width: 100%;
+      text-align: center;
       
       img {
         filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
         width: 50px;
-        margin-left: 400px;
+        // margin:auto;
       }
       h2 {
         text-align: center;
@@ -319,6 +349,14 @@ $mobile: 767px;
       p {
         text-align: center;
         padding: 5px 150px;
+        @media screen and (max-width: $tablet) {
+          padding: 5px 50px;
+        }
+        @media screen and (max-width: $mobile) { 
+          padding: 5px 30px;
+          font-size: 14px;
+          line-height: 25px;
+          }
       }
     }
   }
@@ -330,24 +368,49 @@ $mobile: 767px;
   background-position-y: -50px;
   height: 400px;
   transition: 0.5s;
-
+  @media screen and (max-width: $tablet) {
+    
+  }
+  @media screen and (max-width: $mobile) { 
+    height: 700px;
+    background-position-y: 0px;
+    background-position: center;
+    }
 }
 
 #info-containter {
-  height: 500px;
+  // height: 500px;
   display:flex;
   // display: grid;
   // grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: $tablet) {
+    display: inline;
+  }
 
   #info {
     margin: 0px 100px;
     padding: 120px 150px;
+    @media screen and (max-width: $tablet) {
+      margin: 0px 50px;
+      padding: 50px 150px;
+    }
+    @media screen and (max-width: $mobile) { 
+      padding: 50px 50px;
+      margin: auto;
+      }
     h1 {
       font-size: 24pt;
       color: #004884;
+      @media screen and (max-width: $tablet) {
+        font-size: 30pt;
+      }
     }
     p {
       color: #556f87;
+      @media screen and (max-width: $tablet) {
+        font-size: 14pt;
+      }
+      
     }
   }
 
@@ -356,6 +419,14 @@ $mobile: 767px;
       width: 500px;
       margin:100px 130px;
       border-radius: 15px;
+      @media screen and (max-width: $tablet) {
+        margin: 50px 90px;
+        width: 600px;
+      }
+      @media screen and (max-width: $mobile) { 
+        width: 100%;
+        margin: 50px auto;
+        }
     }
   }
 }

@@ -445,8 +445,8 @@
   background-size: cover;
   background-position-y: -50px;
   height: 400px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media screen and (max-width: 767px) {
@@ -495,7 +495,7 @@
 
 @media screen and (max-width: 1024px) {
   #info-containter #info h1 {
-    font-size: 30pt;
+    font-size: 20pt;
   }
 }
 
@@ -505,7 +505,7 @@
 
 @media screen and (max-width: 1024px) {
   #info-containter #info p {
-    font-size: 14pt;
+    font-size: 12pt;
   }
 }
 

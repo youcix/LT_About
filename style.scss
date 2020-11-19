@@ -367,7 +367,7 @@ $mobile: 767px;
   background-size: cover;
   background-position-y: -50px;
   height: 400px;
-  transition: 0.5s;
+  transition: 1s;
   @media screen and (max-width: $tablet) {
     
   }
@@ -402,13 +402,13 @@ $mobile: 767px;
       font-size: 24pt;
       color: #004884;
       @media screen and (max-width: $tablet) {
-        font-size: 30pt;
+        font-size: 20pt;
       }
     }
     p {
       color: #556f87;
       @media screen and (max-width: $tablet) {
-        font-size: 14pt;
+        font-size: 12pt;
       }
       
     }

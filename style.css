@@ -335,7 +335,7 @@
 
 @media screen and (min-width: 1025px) {
   #about-containter #about-text {
-    margin: 50px 10px;
+    margin: 0px 10px;
   }
 }
 

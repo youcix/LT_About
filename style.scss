@@ -344,8 +344,9 @@ $mobile: 767px;
     @media screen and (max-width: $mobile) {
       margin: 0px 50px 30px;
     }
+    // text-align: left;
     h1 {
-      padding-top: 150px;
+      padding-top: 80px;
       font-size: 26pt;
       color: #004884;
       @media screen and (max-width: $tablet) {
